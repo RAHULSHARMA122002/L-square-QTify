@@ -1,0 +1,14 @@
+
+.btn {
+  background-color: black;
+  color: var(--btn-color);
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
