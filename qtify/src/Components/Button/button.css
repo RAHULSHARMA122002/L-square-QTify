@@ -1,13 +1,14 @@
-
 .btn {
-  background-color: black;
-  color: var(--btn-color);
+  background-color: #000000 !important;
+  color: #00C853;
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
   padding: 10px 20px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
 }
+
 
 .btn:hover {
   opacity: 0.9;
