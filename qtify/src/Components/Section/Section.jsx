@@ -33,21 +33,20 @@ function Section({ title, apiEndpoint, showCollapse = true }) {
           </button>
         )}
       </div>
-
-      {isCollapsed ? (
-        <Carousel albums={albums} />
-      ) : (
-        <div className="grid">
-          {albums.map((album) => (
-            <Card
-              key={album._id || album.id}
-              image={album.image}
-              followers={album.follows}
-              title={album.title}
-            />
-          ))}
-        </div>
-      )}
+{isCollapsed ? (
+  <Carousel albums={albums} />
+) : (
+  <div className="grid">
+    {albums.map((album) => (
+      <Card
+        key={album._id || album.id}
+        image={album.image}
+        followers={album.follows}
+        title={album.title}
+      />
+    ))}
+  </div>
+)}
     </div>
   );
 }
