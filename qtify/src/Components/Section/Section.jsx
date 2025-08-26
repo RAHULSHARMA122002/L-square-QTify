@@ -26,11 +26,11 @@ function Section({ title, apiEndpoint, showCollapse = true }) {
         <h2>{title}</h2>
         {showCollapse && (
           <button
-            className="collapseBtn"
-            onClick={() => setIsCollapsed(!isCollapsed)}
-          >
-            {isCollapsed ? "Show All" : "Collapse"}
-          </button>
+  className="collapseBtn"
+  onClick={() => setIsCollapsed(!isCollapsed)}
+>
+  {isCollapsed ? "Collapse" : "Show All"}
+</button>
         )}
       </div>
 {isCollapsed ? (
